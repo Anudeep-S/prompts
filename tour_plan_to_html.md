@@ -66,4 +66,5 @@ Once textually confirmed, output the layout inside a single, valid downloadable 
 
 #### 📞 Category 4: Tap-to-Call Directory & Google Business Page Links
 - Format every address mentioned as a hyperlink that opens directly into its official Google Maps Business/Place Page (not a generic coordinate pin) for live photos and menu updates.
+- STRICT LINKING RULE: Format every single attraction, rest stop, park, bakery, and restaurant address mentioned as a functional usage HTML link to its official Google Maps Business/Place Page.
 - Format every telephone number as a markdown link using the strict schema `[Formatted Number](tel:DialableNumber)` so it is actionable with a single tap from a smartphone.
