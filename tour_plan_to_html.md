@@ -48,7 +48,7 @@ Once attractions are chosen, present a full text layout of the day including a c
 
 ### STEP 3: OUTPUT FORMAT DESIGN (AFTER FINAL CONFIRMATION)
 
-Once textually confirmed, output the layout inside a single, valid HTML code block (.html) containing these exact sections and styles:
+Once textually confirmed, output the layout inside a single, valid downloadable HTML code block (.html) containing these exact sections and styles:
 
 #### 🌤️ Category 1: Trip Briefing, Weather & Member-Specific Essentials
 - Position this section at the very top of the page. Display the forecast high/low.
