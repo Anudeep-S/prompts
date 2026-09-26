@@ -1,0 +1,82 @@
+Run a FULL WEEKLY MULTI-AGENT TRAVEL COUNCIL from scratch for the user's family vacation decision. Rebuild the market view every week rather than anchoring on previous results.
+
+### SHARED CONSTRAINTS & PORTFOLIO RULES
+* **Origin & Duration:** Toronto (YYZ); ~7 nights; Window: Jan–Jun 2027.
+* **Travelers:** 2 adults + 2 kids (ages 7 and 2 at time of travel).
+* **Assets Available:** 
+  * 133,615 Aeroplan points.
+  * Air Canada Annual Worldwide Companion Pass (Book-by July 20, 2027).
+  * 45,000 CIBC Aventura points (spouse's CIBC Aventura Visa Infinite; 4 free Airport Lounge passes via Visa Airport Companion).
+  * Cards: TD Aeroplan Visa Infinite Privilege, CIBC Aventura Visa Infinite, Costco Executive, CIBC Costco Mastercard.
+* **Companion Pass Geography & Fare Rules:** 
+  * STRICTLY $99 Companion Pass geography: Canada + Continental U.S. (excluding Hawaii; Alaska eligible if verified).
+  * Fare Requirement: Published Economy marketed AND operated by Air Canada, Air Canada Rouge, or Air Canada Express.
+  * Default Flight Structure: Primary cardholder paid Economy + 1 family member on $99 Companion Pass; Spouse + child on Aeroplan reward tickets on the EXACT SAME flights. Test alternative split-ticketing if cheaper.
+* **CIBC Aventura Point Deployment Options:**
+  * Option A: Flexible Travel via CIBC by Expedia (1 pt = $0.01 CAD) applied against non-AC secondary flights, hotel accommodations, or car rentals ($450 CAD value).
+  * Option B: CIBC Aventura Flight Rewards Chart (e.g., 25,000–35,000 pts for 1 Canada/U.S. long-haul base fare up to $800 CAD) if testing non-Air Canada flight options or secondary legs.
+* **Portland (PDX) Base Option:** 
+  * Local hosts (2 adults + 8yo child) provide $0 lodging while based in Portland. 
+  * Portland can serve as: (a) primary destination, (b) hub for day trips / 2–4 night road trips, or (c) launchpad for a secondary flight out of PDX (non-AC allowed for secondary segment, but total cost must factor it in).
+  * If friends join road trips, account for 4 adults + 3 kids (8, 7, 2), requiring appropriate vehicle, car seats, and lodging capacity.
+* **PTO / Holiday Anchors (Tie-Breaker Only):** 
+  * 2027 Ontario Holidays: Jan 1 (New Year), Feb 15 (Family Day), Mar 26 (Good Friday), May 24 (Victoria Day). 
+  * Prefer holiday alignment ONLY if pricing/experience isn't degraded. Report net PTO days required.
+
+---
+
+### ADVERSARIAL MULTI-AGENT EXECUTION PIPELINE
+
+Run the following agents in strict sequence. Each agent MUST act independently and challenge prior assumptions.
+
+#### AGENT 1 — TRAVEL EXPLORER (Deep Unanchored Discovery)
+* Discover EXACTLY 15 distinct, high-viability trip concepts across eligible Canada/U.S. destinations served by Air Canada.
+* Do not restrict to safe options; actively explore creative open-jaw routes, secondary PDX hub structures, seasonal outdoor/wildlife peak windows, and high-wow family destinations.
+* For each candidate, evaluate: Destination & Concept, Exact/Approx 7-night Window, Experience Summary, Family Appeal (7yo & 2yo balance), Wow Factor, Exact Seasonality/Weather, Value Potential, and Primary Logistical Risk.
+
+#### AGENT 2 — USER ADVOCATE (Ruthless Filtering)
+* Act strictly in the family's interest (minimizing toddler fatigue, avoiding long driving burdens, maximizing $0 Portland lodging, and preserving budget).
+* Critically review all 15 candidates. Filter the list down to EXACTLY TOP 5.
+* **Mandatory Friction:** Explicitly justify why notable "high-wow" candidates were rejected (e.g., brutal flight schedules for a 2yo, excessive driving, poor Companion Pass yield).
+
+#### AGENT 3 — DEAL ANALYST (Granular Price Engine)
+* Perform deep financial modeling ONLY for the Top 5 finalists.
+* Evaluate checkout/all-in CAD pricing:
+  * Air Canada cash fare benchmark for 4 travelers vs. Optimized Paid + $99 Companion + Aeroplan split structure.
+  * Net Aeroplan Cents-Per-Point (CPP) against displaced cash fare; track remaining points.
+  * Optimal 45,000 Aventura point allocation (offsetting hotel/rental via CIBC Expedia at $450 CAD value OR applying to Aventura Flight Chart).
+  * All-in Lodging (Costco Travel Canada, Airbnb/Vrbo all-in with cleaning/service fees, Hotel direct net of Aventura redemptions).
+  * Ground transport (Costco Car Rental, SUV size for car seats, fuel, parking).
+  * Activity/attraction budget.
+  * Deduct quantifiable Costco/credit card rewards to calculate **NET ALL-IN CASH COST (CAD)**.
+
+#### AGENT 4 — SKEPTICAL REVIEWER (Adversarial Audit)
+* **Goal:** Attempt to DISPROVE and DISQUALIFY each of the Top 5 finalists. Do not agree with Agent 3.
+* **Audit Checklist:**
+  1. Operating Carrier Check: Is any segment operated by United, WestJet, or a partner that voids the Companion Pass?
+  2. Reward Seat Availability: Are there actually 2 Aeroplan reward seats on the exact same flights?
+  3. Aventura Mechanics: Is the $450 Aventura credit accurately subtracted without double-counting?
+  4. Hidden Friction: Are there hidden resort/parking fees, tight connections with a toddler, seasonal road/attraction closures, or unviable rental car sizes?
+* Mark every data point as **[VERIFIED]**, **[INDICATIVE]**, **[ESTIMATED]**, or **[UNKNOWN]**. Force required corrections back to Agent 3.
+
+#### AGENT 3B — ANALYST REPAIR
+* Perform ONE mandatory correction pass using Agent 4's findings. Recalculate net costs and freeze final metrics.
+
+#### AGENT 5 — TRIP JUDGE (Final Verdict)
+* Score each corrected finalist using weighted criteria:
+  * **Destination & Family Quality:** 30%
+  * **Total Trip Cost & Value:** 30%
+  * **Wow / Memorability:** 25%
+  * **Companion Pass, Aeroplan & Aventura Efficiency:** 15%
+* Assign overall score (/10), confidence level (HIGH/MEDIUM/LOW), and status (**BOOK NOW**, **WATCH**, or **DROP**).
+* Define explicit price/date triggers that would move a destination from WATCH to BOOK NOW, or cause #2/#3 to overtake #1.
+
+---
+
+### OUTPUT FORMAT REQUIREMENTS
+
+1. **FINAL COUNCIL REPORT:** Present ranked Top 5 with full itemized flight, lodging, rental, points, PTO, weather, and net cost breakdowns. Detail why #1 beats #2 and #3 in both experience and economics.
+2. **EMAIL TOOL EXECUTION INSTRUCTIONS:** 
+   * Draft and invoke the email action to send the complete Council Summary to `pl.ganji3@gmail.com`.
+   * **Conditional Alert:** IF and ONLY IF at least one candidate receives a **BOOK NOW** rating, trigger a separate concise action alert to `anudeeps.iitb15@gmail.com` with the winning trip name, dates, net cost, points/pass/Aventura use, confidence, and immediate booking rationale. If no BOOK NOW exists, do NOT email this address.
+3. **FOOTNOTE — 15-CANDIDATE EXPLORER BOARD:** End with a compact 15-row table/list showing all initial concepts with: (1) Place/Concept, (2) Date Window, (3) 3–6 word Descriptor, (4) Experience/Wow (/10), (5) Value Potential (H/M/L), (6) Advance to Top 5 (YES ⭐ / NO + 2-3 word rejection reason).
